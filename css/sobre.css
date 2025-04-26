@@ -1,0 +1,132 @@
+:root {
+    --verde-principal:  #28a745; /* Verde escuro, elegante */
+    --verde-claro: #a5d6a7;     /* Verde claro para detalhes */
+    --branco: #ffffff;
+  }
+ 
+ /* Estilo para o cabeçalho */
+ header {
+    background-color: #28a745; /* Verde, a cor principal */
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+    font-weight: bold; /* Adicionando o negrito */
+}
+
+.nav-link {
+color: var(--branco);
+transition: 0.3s;
+}
+
+.nav-link:hover {
+color: #a5d6a7;
+text-decoration: underline;
+}
+
+.section-header {
+    color: #006400;
+}
+
+/* Seções de conteúdo (simulando tabela com fundo leve) */
+.section-content {
+    background-color: #f8f9fa; /* Cor de fundo leve */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px; /* Espaçamento interno */
+    margin-bottom: 30px; /* Espaço entre as seções */
+}
+
+/* Borda sob os títulos das seções */
+.section-content h3 {
+    border-bottom: 2px solid #ddd; /* Linha fina e clara abaixo do título */
+    padding-bottom: 10px; /* Espaço abaixo do título */
+    margin-bottom: 15px; /* Espaço entre o título e o conteúdo */
+    color: #006400; /* Cor mais forte para o título */
+}
+
+/* Estilo para as imagens */
+.section-content img {
+    width: 100%;  /* Faz a imagem ocupar toda a largura da coluna */
+    height: 300px; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Garante que as imagens não deformem */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para a imagem */
+}
+
+/* Ajuste nas colunas */
+.section-content .row {
+    margin-bottom: 40px; /* Espaçamento entre as seções */
+}
+
+.section-content .col-md-6 {
+    margin-bottom: 20px; /* Garantir espaçamento entre as colunas */
+    display: flex; /* Flexbox para alinhar o conteúdo lado a lado */
+    align-items: center; /* Alinha o texto ao centro da coluna */
+    justify-content: flex-start; /* Garante que o texto fique à esquerda */
+}
+
+.section-content .col-md-6 p {
+    margin-left: 15px; /* Adiciona espaçamento entre o texto e a imagem */
+    font-size: 1rem; /* Tamanho da fonte */
+    line-height: 1.6; /* Aumenta o espaçamento entre as linhas */
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 767px) {
+    .section-content .row {
+        text-align: center;
+    }
+
+    .section-content .col-md-6 img {
+        margin-top: 15px; /* Menos espaço em telas pequenas */
+        color: #006400;
+    }
+
+    .section-content .col-md-6 {
+        flex-direction: column; /* Em telas menores, coloca a imagem acima do texto */
+    }
+
+    .section-content .col-md-6 p {
+        margin-left: 0; /* Remove o espaçamento entre o texto e a imagem em telas pequenas */
+    }
+}
+
+.team-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.team-card img {
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #28a745; /* Cor de fundo verde igual ao cabeçalho */
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .footer-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+footer .footer-links a:hover {
+    color: #ffb600;
+}
